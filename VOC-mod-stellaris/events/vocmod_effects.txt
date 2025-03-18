@@ -1,0 +1,60 @@
+namespace = vocmod
+country_event = {
+	id = vocmod.1
+	hide_window = yes
+	fire_only_once = yes
+	trigger = {
+		NOT = {
+			has_global_flag = vocmod_installed
+		}
+	}
+	immediate = {
+		set_global_flag = vocmod_installed
+	}
+}
+
+country_event = {
+	id = vocmod.2
+	hide_window = yes
+	fire_only_once = yes
+	trigger = {
+		has_origin = origin_trade_fleet_legacy
+	}
+	immediate = {
+		give_technology = {
+			tech = tech_thrusters_2
+			message = yes
+		}
+	}
+}
+
+country_event = {
+	id = vocmod.3
+	title = vocmod.3.name
+	desc = vocmod.3.desc
+	hide_window = no
+	fire_only_once = yes
+	trigger = {
+		has_origin = origin_trade_fleet_legacy
+	}
+	option = {
+		name = vocmod.3.a
+		enable_special_project = {
+			name = ANCIENT_SHIPPING_MANIFEST
+		}
+	}
+}
+
+country_event = {
+	id = vocmod.4
+	hide_window = yes
+	fire_only_once = yes
+	immediate = {
+		spawn_system = {
+			min_distance = 2
+			max_distance = 4
+			max_jumps = 0
+			initializer = broken_system_initializer
+		}
+	}
+}

@@ -1,0 +1,11 @@
+d_spice_fields = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare_resource
+	icon = d_spice_fields
+	resources = {
+		category = planet_deposits
+		produces = {
+			sr_spice = 1
+		}
+	}
+}

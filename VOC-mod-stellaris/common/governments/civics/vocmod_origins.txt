@@ -1,0 +1,9 @@
+origin_trade_fleet_legacy = {
+	is_origin = yes
+	icon = gfx/interface/icons/origins/origins_trade_fleet_legacy.dds
+	picture = GFX_ship_offloading_cargo
+	description = origin_trade_fleet_legacy
+	modifier = {
+		country_naval_cap_mult = 0.1
+	}
+}
